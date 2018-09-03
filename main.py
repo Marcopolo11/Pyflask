@@ -5,9 +5,9 @@ app = Flask(__name__)
 @app.route('/')
 def hello_world():
   print("Testing Print")
-  return 'Hello1, World!'
+  return 'Hello, World!'
 
-@app.route('/')
+@app.route('/s')
 def Test():
     return 'test done'
 
