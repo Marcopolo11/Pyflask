@@ -17,12 +17,12 @@ def build_plot():
     y = [1,2,3,4,5]
     x = [0,2,1,3,4]
     a=plt.plot(x,y)
-    
+    return a
 @app.route('/')
 def Test():
     return 'test done'
 
-    return a
+
 
 if __name__ == '__main__':
   app.run()
