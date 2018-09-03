@@ -18,6 +18,9 @@ def build_plot():
     x = [0,2,1,3,4]
     a=plt.plot(x,y)
     
+@app.route('/')
+def Test():
+    return 'test done'
 
     return a
 
