@@ -1,6 +1,7 @@
 import flask
 import io
 import base64
+import matplotlib
 
 app = flask.Flask(__name__)
 app.debug = True
@@ -13,8 +14,8 @@ def build_plot():
 
       y = [1,2,3,4,5]
       x = [0,2,1,3,4]
-      plt.plot(x,y)
-      plt.savefig(img, format='png')
+      matplotlib.pyplot.plot(x,y)
+      matplotlib.pyplot.savefig(img, format='png')
       img.seek(0)
 
       plot_url = base64.b64encode(img.getvalue()).decode()
