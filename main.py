@@ -1,5 +1,4 @@
 import flask
-import Django
 import io
 import base64
 
