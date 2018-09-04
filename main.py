@@ -12,7 +12,7 @@ def hello_world():
   print("Testing Print")
   a='Hello1'
   b='2World!'
-  return a
+  return flask.render_template('hi')
 
 if __name__ == '__main__':
     app.run()
