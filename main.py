@@ -17,15 +17,16 @@ def hello_world():
   
   y = [1,2]
   x = [0,2]
-  plt.plot(x,y)
+  
   #a=matplotlib.pyplot.plot(x,y)
   #return a
   try:
-    return str(y)
+    plt.plot(x,y)
+    
   except Exception as e:
     err=("type error: " + str(e) + a)
     return err
-
+  return str(y)
 if __name__ == '__main__':
   app.debug = True
   app.run()
