@@ -1,4 +1,4 @@
 Flask==1.0.3
-Matplotlib>=1.5
+Matplotlib
 base64
 io
