@@ -22,9 +22,9 @@ def hello_world():
   #return a
   plt.figure(1, figsize=(1, 1))
   plt.plot()
-  pt=plt.show()
+  a=fig.savefig('a.png')
   try:
-    return 's'
+    return a
   except Exception as e:
     err=("type error: " + str(e) + a)
     return err
