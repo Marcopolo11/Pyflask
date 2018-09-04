@@ -1,6 +1,5 @@
 --find-links wheelhouse
 Flask==1.0.3
-matplotlib==2.2.3
-Django==1.11.2
+
 base64
 io
