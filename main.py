@@ -9,7 +9,7 @@ app = Flask(__name__)
 def hello_world():
   try:
     import matplotlib.pyplot as plt
-    return 'fine pyplot'
+    #return 'fine pyplot'
       
   except Exception as e:
     err=("type error: " + str(e) + a)
@@ -20,9 +20,9 @@ def hello_world():
   
   #a=matplotlib.pyplot.plot(x,y)
   #return a
-
-  
-  #pt=plt.show()
+  plt.figure(1, figsize=(1, 1))
+  plt.plot()
+  pt=plt.show()
   try:
     return 's'
   except Exception as e:
