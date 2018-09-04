@@ -1,9 +1,5 @@
 import flask
-try:
-  import matplotlib
-except Exception as e:
-  err=("type error: " + str(e))
-  return err
+
 import io
 import base64
 
