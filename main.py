@@ -1,4 +1,3 @@
-from flask import render_template
 import flask
 import io
 import base64
