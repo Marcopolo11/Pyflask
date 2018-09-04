@@ -12,7 +12,7 @@ def hello_world():
   a='Hello1'
   b='2World!'
   try:
-    return flask.render_template(a=a)
+    return flask.render_template('test.html',a=a)
   except Exception as e:
     err=("type error: " + str(e))
     return err
