@@ -1,5 +1,5 @@
 from flask import Flask
-import matplotlib.pyplot
+import matplotlib
 import io
 import base64
 
