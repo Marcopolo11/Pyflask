@@ -22,7 +22,7 @@ def hello_world():
   #return a
   try:
     plt.plot(x,y)
-    return 'fine pyplot'
+    return 'fine pyplot1'
   except Exception as e:
     err=("type error: " + str(e) + a)
     return err
