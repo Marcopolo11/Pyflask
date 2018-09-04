@@ -17,11 +17,11 @@ def hello_world():
   
   y = [1,3]
   x = [0,2]
-  matplotlib.pyplot.plot(x,y)
+  #matplotlib.pyplot.plot(x,y)
   #a=matplotlib.pyplot.plot(x,y)
   #return a
   try:
-    return matplotlib.pyplot.show()
+    return str(y)
   except Exception as e:
     err=("type error: " + str(e) + a)
     return err
