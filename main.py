@@ -21,9 +21,10 @@ def hello_world():
   #a=matplotlib.pyplot.plot(x,y)
   #return a
   plt.plot(x,y)
+  pt=plt.show()
   try:
     
-    return plt.show()
+    return pt
   except Exception as e:
     err=("type error: " + str(e) + a)
     return err
