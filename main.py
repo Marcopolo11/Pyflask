@@ -6,23 +6,16 @@ import base64
 app = Flask(__name__)
 
 @app.route('/')
-def hello_world():
-  try:
-    import matplotlib.pyplot as plt
-    #return 'fine pyplot'
-      
+def pan():
+   try:
+    import pandas as pd
   except Exception as e:
     err=("type error: " + str(e) + a)
     return err
-  
-  y = [1,2]
-  x = [0,2]
-  
-  #a=matplotlib.pyplot.plot(x,y)
-  #return a
-  plt.figure(1, figsize=(1, 1))
-  plt.plot()
-  fig.savefig('a.png')
+  df = pd.DataFrame({'lab':['A', 'B', 'C'], 'val':[10, 30, 20]})
+  ax = df.plot.bar(x='lab', y='val', rot=0)
+  return df
+
   try:
     return 'b'
   except Exception as e:
