@@ -10,7 +10,9 @@ app.debug = True
 @app.route('/')
 def hello_world():
   print("Testing Print")
-  return flask.render_template('Hello1', '2World!')
+  a='Hello1'
+  b='2World!'
+  return flask.render_template(a=a, b=b)
 
 if __name__ == '__main__':
     app.run()
