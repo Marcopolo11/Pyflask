@@ -12,7 +12,7 @@ def hello_world():
   a='Hello1'
   b='2World!'
   try:
-    import Django
+    import matplotlib
   except Exception as e:
     err=("type error: " + str(e) + a)
     return err
