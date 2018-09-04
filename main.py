@@ -26,7 +26,7 @@ def hello_world():
   #pt=plt.show()
   try:
     
-    return plt.show()
+    return y
   except Exception as e:
     err=("type error: " + str(e) + a)
     return err
