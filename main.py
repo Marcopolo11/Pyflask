@@ -12,7 +12,7 @@ def hello_world():
   print("Testing Print")
   a='Hello1'
   b='2World!'
-  return render_template('hi')
+  return a
 
 if __name__ == '__main__':
     app.run()
