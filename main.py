@@ -14,7 +14,7 @@ def hello_world():
 
     y = [1,3]
     x = [0,2]
-    a=plt.plot(x,y)
+    a=matplotlib.pyplot.plot(x,y)
     return a
   
   except Exception as e:
