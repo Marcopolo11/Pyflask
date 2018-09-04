@@ -17,7 +17,7 @@ def hello_world():
   
   y = [1,3]
   x = [0,2]
-  #matplotlib.pyplot.plot(x,y)
+  matplotlib.pyplot.plot(x,y)
   #a=matplotlib.pyplot.plot(x,y)
   #return a
   try:
