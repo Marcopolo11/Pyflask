@@ -1,4 +1,9 @@
 import flask
+try:
+  import matplotlib
+except Exception as e:
+  err=("type error: " + str(e))
+  return err
 import io
 import base64
 
@@ -12,7 +17,7 @@ def hello_world():
   a='Hello1'
   b='2World!'
   try:
-    return flask.render_template('test.html',a=a)
+    return b
   except Exception as e:
     err=("type error: " + str(e))
     return err
