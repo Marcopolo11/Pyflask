@@ -12,8 +12,8 @@ def hello_world():
     #return 'fine'
     img = io.BytesIO()
 
-    y = [1,2,3,4,5]
-    x = [0,2,1,3,4]
+    y = [1,3]
+    x = [0,2]
     a=plt.plot(x,y)
     plt.savefig(img, format='png')
     img.seek(0)
