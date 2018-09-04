@@ -8,8 +8,8 @@ app = Flask(__name__)
 @app.route('/')
 def hello_world():
   try:
-    import matplotlib
-    #return 'fine'
+    import matplotlib.pyplot as plt
+    return 'fine pyplot'
       
   except Exception as e:
     err=("type error: " + str(e) + a)
@@ -17,7 +17,7 @@ def hello_world():
   
   y = [1,3]
   x = [0,2]
-  matplotlib.pyplot.plot(x,y)
+  plt.plot(x,y)
   #a=matplotlib.pyplot.plot(x,y)
   #return a
   try:
