@@ -9,7 +9,7 @@ app = Flask(__name__)
 def hello_world():
   try:
     import matplotlib.pyplot as plt
-    #return 'fine pyplot'
+    return 'fine pyplot'
       
   except Exception as e:
     err=("type error: " + str(e) + a)
@@ -24,7 +24,7 @@ def hello_world():
   plt.plot()
   a=fig.savefig('a.png')
   try:
-    return a
+    return 'b'
   except Exception as e:
     err=("type error: " + str(e) + a)
     return err
