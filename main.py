@@ -18,8 +18,11 @@ def hello_world():
   x = [0,2]
   #a=matplotlib.pyplot.plot(x,y)
   #return a
-  return matplotlib.pyplot.plot(x,y)
-
+  try:
+    return matplotlib.pyplot.plot(x,y)
+  except Exception as e:
+    err=("type error: " + str(e) + a)
+    return err
 
 if __name__ == '__main__':
   app.debug = True
