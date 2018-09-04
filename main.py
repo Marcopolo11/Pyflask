@@ -1,7 +1,20 @@
 import flask
-import io
-import base64
-import matplotlib
+try:
+  import io
+except Exception as e:
+  err=("type error: " + str(e))
+  return err
+try:
+  import base64
+except Exception as e:
+  err=("type error: " + str(e))
+  return err
+try:
+  import matplotlib
+except Exception as e:
+  err=("type error: " + str(e))
+  return err
+
 
 app = flask.Flask(__name__)
 app.debug = True
