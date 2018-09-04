@@ -14,14 +14,14 @@ def hello_world():
   except Exception as e:
     err=("type error: " + str(e) + a)
     return err
-  img = io.BytesIO()
+  
   y = [1,3]
   x = [0,2]
   matplotlib.pyplot.plot(x,y)
   #a=matplotlib.pyplot.plot(x,y)
   #return a
   try:
-    return render_template('testu.html', name = matplotlib.pyplot.show())
+    return matplotlib.pyplot.show()
   except Exception as e:
     err=("type error: " + str(e) + a)
     return err
