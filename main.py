@@ -15,7 +15,7 @@ def hello_world():
   try:
     import matplotlib
   except Exception as e:
-    err=("type error: " + str(e))
+    err=("type error: " + str(e) + a)
     return err
   
   try:
