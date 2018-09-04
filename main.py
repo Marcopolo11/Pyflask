@@ -11,7 +11,12 @@ def hello_world():
   print("Testing Print")
   a='Hello1'
   b='2World!'
-  return flask.render_template(a=a)
+  try:
+    return flask.render_template(a=a)
+  except Exception as e:
+    err=("type error: " + str(e))
+    return err
+  
 
 if __name__ == '__main__':
     app.run()
