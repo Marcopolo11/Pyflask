@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask , render_template
 import io
 import base64
 
@@ -18,14 +18,10 @@ def hello_world():
   y = [1,3]
   x = [0,2]
   matplotlib.pyplot.plot(x,y)
-  #matplotlib.pyplot.savefig(img, format='png')
-  matplotlib.pyplot.savefig('/static/images/new_plot.png')
-  #img.seek(0)
-  #plot_url = base64.b64encode(img.getvalue()).decode()
   #a=matplotlib.pyplot.plot(x,y)
   #return a
   try:
-  return render_template('testplot.html', name = 'new_plot', url ='/static/images/new_plot.png')
+    return render_template('testu.html', name = matplotlib.pyplot.show())
   except Exception as e:
     err=("type error: " + str(e) + a)
     return err
