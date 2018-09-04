@@ -26,4 +26,5 @@ def hello_world():
     return err
 
 if __name__ == '__main__':
+  app.debug = True
   app.run()
