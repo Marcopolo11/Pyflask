@@ -20,8 +20,8 @@ def hello_world():
   
   #a=matplotlib.pyplot.plot(x,y)
   #return a
-  plt.plot(x,y)
-  pt=plt.show()
+  pt=plt.plot(x,y)
+  #pt=plt.show()
   try:
     
     return pt
