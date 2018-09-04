@@ -13,7 +13,7 @@ def hello_world():
   a='Hello1'
   b='2World!'
   try:
-    import matplotlib
+    import pyplot
   except Exception as e:
     err=("type error: " + str(e))
     return err
