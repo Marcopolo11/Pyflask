@@ -9,6 +9,7 @@ app = Flask(__name__)
 def hello_world():
   try:
     import matplotlib
+    return 'fine'
   except Exception as e:
     err=("type error: " + str(e) + a)
     return err
