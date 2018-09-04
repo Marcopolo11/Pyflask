@@ -1,4 +1,4 @@
-
-matplotlib==1.4.3
+Flask==1.0.3
+matplotlib==2.2.3
 base64
 io
