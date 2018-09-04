@@ -15,7 +15,7 @@ def hello_world():
     err=("type error: " + str(e) + a)
     return err
   
-  y = [1,3]
+  y = [1,2]
   x = [0,2]
   plt.plot(x,y)
   #a=matplotlib.pyplot.plot(x,y)
