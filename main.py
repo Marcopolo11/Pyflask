@@ -8,7 +8,7 @@ app = Flask(__name__)
 @app.route('/')
 def pan():
    try:
-      import pandas as pd
+      import pandasas as pd
    except Exception as e:
       err=("type error: " + str(e) + a)
       return err
