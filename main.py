@@ -20,8 +20,9 @@ def hello_world():
   
   #a=matplotlib.pyplot.plot(x,y)
   #return a
+  plt.figure(1, figsize=(1, 1))
   plt.plot(x,y)
-  plt.figure(1, figsize=(9, 3))
+  
   #pt=plt.show()
   try:
     
