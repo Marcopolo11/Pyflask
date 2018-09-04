@@ -1,4 +1,4 @@
-
+from flask import render_template
 import flask
 import io
 import base64
@@ -12,7 +12,7 @@ def hello_world():
   print("Testing Print")
   a='Hello1'
   b='2World!'
-  return flask.render_template('hi')
+  return render_template('hi')
 
 if __name__ == '__main__':
     app.run()
