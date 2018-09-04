@@ -20,11 +20,12 @@ def hello_world():
   
   #a=matplotlib.pyplot.plot(x,y)
   #return a
-  pt=plt.plot(x,y)
+  plt.plot(x,y)
+  plt.figure(1, figsize=(9, 3))
   #pt=plt.show()
   try:
     
-    return pt
+    return plt.show()
   except Exception as e:
     err=("type error: " + str(e) + a)
     return err
