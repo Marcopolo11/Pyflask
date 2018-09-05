@@ -1,7 +1,8 @@
+#https://stackoverflow.com/questions/41459657/how-to-create-dynamic-plots-to-display-on-flask
+#https://stackoverflow.com/questions/34492197/how-to-render-and-return-plot-to-view-in-flask
 from flask import Flask , render_template
 import io
 import base64
-import StringIO
 
 app = Flask(__name__)
 
@@ -15,7 +16,7 @@ def test():
    except Exception as e:
       err=("type error: " + str(e) + a)
       return err
-   img = StringIO.StringIO()
+   img = io.BytesIO()
    y = [1,2,3,4,5]
    x = [0,2,1,3,4]
    plt.plot(x,y)
